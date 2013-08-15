@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'mongoid'
+gem 'mongoid', github: 'mongoid/mongoid'
 gem 'slim-rails'
 gem 'bson_ext'
 
@@ -34,6 +34,7 @@ end
 
 group :test do
   gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
   gem 'rspec-rails'
 end
 
